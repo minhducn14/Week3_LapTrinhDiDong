@@ -11,12 +11,22 @@ import {
 import { images } from '../constants/images';
 
 
-const Cau1d = ({ navigation }) => {
+const Cau1e = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.titleText}>Login</Text>
+            <Text style={styles.titleText}>REGISTER</Text>
 
             <View style={styles.inputContainer}>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Name"
+                    placeholderTextColor="black"
+                />
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Phone"
+                    placeholderTextColor="black"
+                />
                 <TextInput
                     style={styles.textInput}
                     placeholder="Email"
@@ -35,10 +45,32 @@ const Cau1d = ({ navigation }) => {
                         />
                     </TouchableOpacity>
                 </View>
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Birthday"
+                    placeholderTextColor="black"
+                />
+
+                <View style={styles.genderContainer}>
+                    <View style={styles.radioButton}>
+                        <Image
+                            source={images.RadioButton}
+                            style={styles.radioIcon}
+                        />
+                        <Text style={styles.genderText}>Male</Text>
+                    </View>
+                    <View style={styles.radioButton}>
+                        <Image
+                            source={images.RadioButton}
+                            style={styles.radioIcon}
+                        />
+                        <Text style={styles.genderText}>Fermale</Text>
+                    </View>
+                </View>
             </View>
-            <TouchableOpacity style={styles.login} onPress={() => navigation.navigate('Cau1e')}>
+            <TouchableOpacity style={styles.login}>
                 <View style={styles.loginButton}>
-                    <Text style={styles.loginButtonText}>LOGIN</Text>
+                    <Text style={styles.loginButtonText}>REGISTER</Text>
                 </View>
             </TouchableOpacity>
 
@@ -46,39 +78,6 @@ const Cau1d = ({ navigation }) => {
                 <Text style={styles.footerText}>
                     When you agree to terms and conditions
                 </Text>
-                <Text style={styles.linkText}>
-                    Forgot your password?
-                </Text>
-                <Text style={styles.footerText}>
-                    Or login with
-                </Text>
-
-                <View style={{ flexDirection: 'row' }}>
-                    <TouchableOpacity style={[styles.buttonContainer, styles.facebookButton]}>
-
-                        <Image
-                            style={styles.socialIcon}
-                            resizeMode="cover"
-                            source={images.Facebook}
-                        />
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[styles.buttonContainer, styles.zaloButton]}>
-
-                        <Image
-                            style={styles.socialIcon}
-                            resizeMode="cover"
-                            source={images.Zalo}
-                        />
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={[styles.buttonContainer, styles.googleButton]}>
-                        <Image
-                            style={styles.socialIcon}
-                            resizeMode="cover"
-                            source={images.Google}
-                        />
-                    </TouchableOpacity>
-                </View>
             </View>
         </View>
     );
@@ -105,24 +104,31 @@ const styles = StyleSheet.create({
     },
     textInput: {
         backgroundColor: '#C4C4C44D',
-        height: 50,
-        marginBottom: 10,
+        height: 54,
+        width: 330,
+        marginBottom: 20,
         paddingLeft: 20,
         borderRadius: 10,
+
     },
     passwordContainer: {
+        height: 54,
+        width: 330,
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#C4C4C44D',
         justifyContent: 'space-between',
         borderRadius: 10,
         paddingRight: 10,
+        marginBottom: 20,
+
     },
     passwordInput: {
         backgroundColor: 'transparent',
         height: 50,
         width: '85%',
         paddingLeft: 20,
+        fontSize: 20
     },
     eyeIcon: {
         width: 24,
@@ -135,8 +141,28 @@ const styles = StyleSheet.create({
         width: '90%',
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 50,
 
+    },
+    genderContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        marginTop: 10,
+
+        marginBottom: 20,
+    },
+    radioButton: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    radioIcon: {
+        width: 24,
+        height: 24,
+        marginRight: 10,
+    },
+    genderText: {
+        fontSize: 16,
+        color: 'black',
+        fontFamily: 'Roboto-Regular',
     },
     loginButton: {
         backgroundColor: 'transparent',
@@ -153,7 +179,7 @@ const styles = StyleSheet.create({
     },
     footerContainer: {
         alignItems: 'center',
-        marginTop: 50,
+        marginTop: 20,
     },
     footerText: {
         color: '#000',
@@ -162,39 +188,8 @@ const styles = StyleSheet.create({
         fontFamily: 'Roboto-Regular',
         marginVertical: 5,
     },
-    linkText: {
-        color: '#5d25fa',
-        fontSize: 14,
-        textAlign: 'center',
-        fontFamily: 'Roboto-Regular',
-        marginVertical: 10,
-    },
-    buttonContainer: {
-        width: 120,
-        height: 50,
-        justifyContent: 'center',
-        marginVertical: 10,
-        alignItems: 'center',
-    },
-    facebookButton: {
-        backgroundColor: '#25479b',
-        justifyContent: 'center',
-    },
-    zaloButton: {
-        backgroundColor: '#0f8ee0',
-        justifyContent: 'center',
-    },
-    googleButton: {
-        borderColor: '#0680f1',
-        justifyContent: 'center',
-        backgroundColor: '#fff',
-    },
-    socialIcon: {
-        width: 20,
-        height: 20,
-        justifyContent: 'center',
-    },
+
 
 });
 
-export default Cau1d;
+export default Cau1e;

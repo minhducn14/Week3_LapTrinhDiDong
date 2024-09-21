@@ -5,4 +5,5 @@ export const images = {
     Google: require('../assets/icogoogle.png'),
     Facebook: require('../assets/icofacebook.png'),
     Zalo: require('../assets/icozalo.png'),
+    RadioButton: require('../assets/rdb.png'),
 };
