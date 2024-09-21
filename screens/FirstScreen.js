@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 24,
         textAlign: 'center',
+        fontFamily: 'Roboto-Bold',
     },
     infoContainer: {
         flex: 1,
@@ -68,6 +69,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         textAlign: 'center',
         color: 'black',
+        fontFamily: 'Roboto-Bold',
     },
     buttonContainer: {
         flex: 1,

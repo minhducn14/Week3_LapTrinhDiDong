@@ -7,8 +7,6 @@ const Cau1a = () => {
         <LinearGradient
             colors={['#C7F4F6', '#D1F4F6', '#E5F4F5', '#37D6F8', '#00CCF9']}
             locations={[0.0003, 0.3021, 0.8542, 0.965, 1]}
-            start={{ x: 0.5, y: 0 }}
-            end={{ x: 0.5, y: 1 }}
             style={styles.container}
         >
             <View style={styles.circleContainer}>
@@ -72,6 +70,7 @@ const styles = StyleSheet.create({
         fontSize: 22,
         textAlign: 'center',
         color: 'black',
+        fontFamily: 'Roboto-Bold',
     },
     infoContainer: {
         flex: 1,
@@ -80,9 +79,11 @@ const styles = StyleSheet.create({
         paddingHorizontal: 30,
     },
     infoText: {
-        fontSize: 14,
+        fontSize: 15,
+        lineHeight: 17.58,
         textAlign: 'center',
         color: 'black',
+        fontFamily: 'Roboto-Bold',
     },
     buttonContainer: {
         flex: 1,
@@ -99,8 +100,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonText: {
+        fontSize: 18,
         fontWeight: 'bold',
         color: 'black',
+        fontFamily: 'Roboto-Bold',
     },
     footerContainer: {
         flex: 1,
