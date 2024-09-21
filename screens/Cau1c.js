@@ -8,7 +8,6 @@ import {
     TouchableOpacity,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { images } from '../constants/images';
 
 const Cau1c = () => {
     return (
